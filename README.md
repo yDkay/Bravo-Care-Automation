@@ -11,9 +11,9 @@
 - Implement the Page Object Model (POM) Design Pattern. ✅ (Using Custom Commands, see resources)
 - Version your code using GitHub. ✅
 - Develop a comprehensive test plan, including test cases and strategy for future implementation. (WIP)
-- Provide detailed instructions or access to the test environments for setting up the testing environment. (WIP)
+- Provide detailed instructions or access to the test environments for setting up the testing environment. ✅
 - Include a video demonstrating the automated test execution. (WIP)
-- Generate and provide analysis and test reports summarizing the test execution results. ✅´
+- Generate and provide analysis and test reports summarizing the test execution results. ✅
 
 <br/>
 
