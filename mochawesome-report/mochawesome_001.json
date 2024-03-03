@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-03T08:07:55.265Z",
+    "end": "2024-03-03T08:08:42.047Z",
+    "duration": 46782,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "19c92c35-12fd-46cc-98e9-1e45d8b3f287",
+      "title": "",
+      "fullFile": "cypress\\e2e\\bravoCareFolder\\automationExercise.cy.js",
+      "file": "cypress\\e2e\\bravoCareFolder\\automationExercise.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5264cbe8-a345-474a-b362-37f9773fccd4",
+          "title": "Test automationexercise website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1",
+              "fullTitle": "Test automationexercise website Test Case 1",
+              "timedOut": null,
+              "duration": 44547,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// 1. Scroll down about halfway down the page;\ncy.get(\".features_items\").contains(\"Fancy Green Top\").scrollIntoView({\n  easing: \"linear\",\n  duration: 750\n}).should(\"be.visible\");\n// For the first requirement, I can use the following command to scroll exactly to the middle of the page:\n// cy.scrollTo(\"center\");\n// But I find using: scrollIntoView() more suitable to this case while also, verifying it that is it visible;\n// We can also use this selector for the item, since the developers did no add a specific ID to the element:\n// cy.get(\".features_items > :nth-child(10)\");\n// Following the best practices, (https://docs.cypress.io/guides/references/best-practices) we can see that using contains is \"Much better. But still coupled to text content that may change.\"\n// If we wanted even more randomness we could use the getRandomArbitrary() function in the commands.js file to select between the nth-child(X) values, but we would sacrifice some consistency on the long term.\n// 2. Choose a product and click on “View product” under the picture of the product\ncy.get(\":nth-child(10) > .product-image-wrapper > .choose > .nav > li > a\").click();\n// We can also use this selector to add the item directly to the cart:\n// cy.get('[data-product-id=\"8\"]').eq(0).click();\n// If we wanted even more randomness we could use the getRandomArbitrary() function in the commands.js file to select between the data-product-id=\"X\" values, but we would sacrifice some consistency on the long term.\n// 3. In the Quantity box enter 5\ncy.get(\"#quantity\").clear().type(5);\n// In this case we can either type the value or change it directly it's attribute;\n// cy.get(\"#quantity\").invoke(\"attr\", \"value\", 5).should(\"have.attr\", \"value\", 5);\n// We could also add randomness to this field by selecting between a wider range of quantities.\n// 4. Click “Add to cart”\ncy.get(\".product-information\").contains(\"Add to cart\").click();\n// Again we can use another selector for this element since it does not have a specific ID:\n// cy.get(':nth-child(5) > .btn').click();\n// 5. Click “View Cart”\ncy.get(\".modal-content\").contains(\"View Cart\").click();\n// Again we can use another selector for this element since it does not have a specific ID:\n// cy.get('.modal-body > :nth-child(2)').click();\n// 6. Click on “Proceed to Checkout”\ncy.get(\"#cart_items\").contains(\"Proceed To Checkout\").click();\n// Again we can use another selector for this element since it does not have a specific ID:\n// cy.get('.col-sm-6 > .btn').click();\n// Could now be updated to use proceedToCheckout(); for better maintainability\n// 7. Click on “Register / Login”\ncy.get(\".modal-body > :nth-child(2)\").click();\n// In this case we can't even use the following contains command since there are more than 1 element with this text in the modal:\n// cy.get(\".modal-content\").contains(\"Register / Login\").click();\n// 8. Enter name and email under “New User Signup!”\ncy.newSignup(\"thisName\", _commands.uniqueEmail);\n// Here we have the first situation where I find it usefull to have a POM Design Pattern (Custom Commands) to create a new account, since this could be used anywhere in the project.\n// We can also create a command that randomizes the credentials, check the commands.js file for this command:\n// cy.newRandSignup();\n// 9. Click on “Signup”\ncy.get('[data-qa=\"signup-button\"]').click();\n// 9. Fill in all information and click on “Create Account” - (This should be the 10th step but there is a typo on the email file).\ncy.newRandInfo();\n// Here we can also create a new command to make the test case more readable.\n// 10. Click on “Continue” under “ACCOUNT CREATED!” title\ncy.get('[data-qa=\"continue-button\"]').click();\n// 11. Click on the Cart in the header\ncy.get(\".shop-menu > .nav\").contains(\"Cart\").click();\n// Again we can use another selector for this element since it does not have a specific ID:\n// cy.get('.shop-menu > .nav > :nth-child(3)').click();\n// Could now be updated to use cy.clickHeader(\"Cart\"); for better maintainability\n// 12. Click on “Proceed to checkout”\ncy.proceedToCheckout();\n// Since now we are reutilizing this same command we could add it to the commands.js for better maintainability\n// 13. Add a comment and click on “Place Order”\nconst uniqueSeed = Date.now().toString();\nconst getUniqueId = () => Cypress._.uniqueId(uniqueSeed);\n// Here we have a useful randomizer, we generate a unique seed based on the current time to never repeat the same value.\ncy.get(\".form-control\").type(getUniqueId());\ncy.get(\"#cart_items\").contains(\"Place Order\").click();\n// Again we can use another selector for this element since it does not have a specific ID:\n// cy.get(':nth-child(7) > .btn').click();\n// 14. Fill in fake Credit Card information and click on “Pay and Confirm Order”\ncy.get('[data-qa=\"name-on-card\"]').type(getUniqueId());\ncy.get('[data-qa=\"card-number\"]').type(getUniqueId());\ncy.get('[data-qa=\"cvc\"]').type(getUniqueId());\ncy.get('[data-qa=\"expiry-month\"]').type(getUniqueId());\ncy.get('[data-qa=\"expiry-year\"]').type(getUniqueId());\n// Since we don't have any restrictions on what we can type, we can reuse the getUniqueId() function, if we had rules, we could use fixtures to use a specific set of approved values or create more random functions that follow the field rules.\ncy.get('[data-qa=\"pay-button\"]').click();\n// 15. Click on “Continue” button\ncy.get('[data-qa=\"continue-button\"]').click();\n// 16. Click on “Logout” on top header\ncy.clickHeader(\"Logout\");\n// Since now we are reutilizing this same command we could add it to the commands.js for better maintainability\n// Again we can use another selector for this element since it does not have a specific ID:\n// cy.get('.shop-menu > .nav > :nth-child(4)').click();\n// 17. On the “Login to your account” box and enter with previously created user\ncy.get('[data-qa=\"login-email\"]').type(_commands.uniqueEmail);\ncy.get('[data-qa=\"login-password\"]').type(\"superSecretPassword\", {\n  sensitive: true\n});\ncy.get('[data-qa=\"login-button\"]').click();\n// 18. Click on “Contact us” on the header\ncy.clickHeader(\"Contact us\");\n// Since now we are reutilizing this same command we could add it to the commands.js for better maintainability\n// 19. Fill required data and Click on “Submit”\ncy.get('[data-qa=\"name\"]').type(getUniqueId());\ncy.get('[data-qa=\"email\"]').type(_commands.uniqueEmail);\ncy.get('[data-qa=\"subject\"]').type(getUniqueId());\ncy.get('[data-qa=\"message\"]').type(getUniqueId());\ncy.get('[data-qa=\"submit-button\"]').click();\n// 20. Press “OK” in the pop up\n// Seems that the click on the submit button is already confirming the pop up, it is shown in the logs and in the console if printed there as Confirmed: true\n// 21. Finally, click on the “Logout” button on the header\ncy.clickHeader(\"Logout\");\n// Since now we are reutilizing this same command we could add it to the commands.js for better maintainability\ncy.get(\".login-form\").should(\"be.visible\");\n// Verifying that the page loaded correctly by asserting the visibility of the form\n// We could also verify this by using the cy.incercept (https://docs.cypress.io/api/commands/intercept)",
+              "err": {},
+              "uuid": "828511b0-3d57-4d94-9662-387bd30d8b17",
+              "parentUUID": "5264cbe8-a345-474a-b362-37f9773fccd4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "828511b0-3d57-4d94-9662-387bd30d8b17"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 44547,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "autoOpen": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
