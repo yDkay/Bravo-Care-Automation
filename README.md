@@ -15,8 +15,6 @@
 - Include a video demonstrating the automated test execution. (WIP)
 - Generate and provide analysis and test reports summarizing the test execution results. ✅
 
-<br/>
-
 # Getting Stated
 
 ### Installing:
