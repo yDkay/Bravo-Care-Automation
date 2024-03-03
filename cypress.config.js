@@ -10,10 +10,11 @@ module.exports = defineConfig({
     watchForFileChanges: false,
     viewportWidth: 1920,
     viewportHeight: 1080,
+    video: true,
   },
   reporter: "mochawesome",
   reporterOptions: {
-    overwrite: false,
+    overwrite: true,
     html: true,
     json: true,
     autoOpen: true,
