@@ -2,7 +2,6 @@
 
 <h1 align="center">
 :black_circle: Bravo Care Automation
-</h1>
 
 <br/>
 
@@ -14,9 +13,41 @@
 - Develop a comprehensive test plan, including test cases and strategy for future implementation. (WIP)
 - Provide detailed instructions or access to the test environments for setting up the testing environment. (WIP)
 - Include a video demonstrating the automated test execution. (WIP)
-- Generate and provide analysis and test reports summarizing the test execution results. ✅
+- Generate and provide analysis and test reports summarizing the test execution results. ✅´
 
-# Resources:
+<br/>
+
+# Getting Stated
+
+### Installing:
+
+[![npm version](https://badge.fury.io/js/cypress.svg)](https://badge.fury.io/js/cypress)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yDkay/Bravo-Care-Automation.git
+```
+
+Install dependencies:
+
+```bash
+npm i
+```
+
+Open Cypress:
+
+```bash
+npx cypress open
+```
+
+## Resources:
+
+To generate a cypress report, run the project in headless mode:
+
+```bash
+npx cypress run
+```
 
 [Thinking beyond Page Object Model in Cypress Test Automation...](https://www.linkedin.com/pulse/thinking-beyond-page-object-model-cypress-test-prashant-bellad/)
 
