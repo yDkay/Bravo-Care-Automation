@@ -1,14 +1,14 @@
 <a name="top"></a>
 
-<h1 align="center">
-:black_circle: Bravo Care Automation
+<h1 align="center" style="color: #1b74b6">
+<img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/lt2dlarmpcgerkt908ib" width="20" height="20" style="vertical-align:center"/> Bravo Care Automation
 
 <br/>
 
 ### My QA Engineer Skill Test (Web automation - Cypress)
 
 - Automate all steps sequentially within a single test case. ✅ (automationExercise.cy.js)
-- Implement the Page Object Model (POM) Design Pattern. ✅ (Using Custom Commands, see resources)
+- Implement the Page Object Model (POM) Design Pattern. ✅ (Using Custom Commands, see [resources](https://github.com/yDkay/Bravo-Care-Automation?tab=readme-ov-file#resources))
 - Version your code using GitHub. ✅ (Here it is)
 - Develop a comprehensive test plan, including test cases and strategy for future implementation. ✅ (TesPlan folder)
 - Provide detailed instructions or access to the test environments for setting up the testing environment. ✅ (README.md)
@@ -21,7 +21,7 @@
 
 [![npm version](https://badge.fury.io/js/cypress.svg)](https://badge.fury.io/js/cypress)
 
-Clone the repository:
+Clone this repository:
 
 ```bash
 git clone https://github.com/yDkay/Bravo-Care-Automation.git

@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 <h1 align="center">
-:red_circle: Test Plan
+:blue_circle: Test Plan
 <br/>
 
 <h1 align="center" >The following describes the Atributes of a Test Plan:
