@@ -49,9 +49,7 @@ npx cypress run
 
 ## Run Video
 
-<video controls>
-  <source src="https://github.com/yDkay/Bravo-Care-Automation/blob/42e095aa474c242dd458bd228d0eda969faaf825/cypress/videos/automationExercise.cy.js.mp4" type="video/mp4">
-</video>
+<iframe src="https://drive.google.com/file/d/1r9tVhawB37BWLF2UUxh4mFMHB8j95r7N/preview" allow="autoplay"></iframe>
 
 ## Links
 
