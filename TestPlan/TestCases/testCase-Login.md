@@ -10,7 +10,7 @@
 
 > That we are in the /login page
 > **&**
-> that there **is** already an available account in the database
+> that there **is** already an available account in the database.
 
 **When**
 
@@ -28,7 +28,7 @@
 
 > That we are in the /login page
 > **&**
-> that there **isn't** already an available account in the database
+> that there **isn't** already an available account in the database.
 
 **When**
 
@@ -44,7 +44,7 @@
 
 **Given**
 
-> That we are in the /signup page
+> That we are in the /signup page.
 
 **When**
 

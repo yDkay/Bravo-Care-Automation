@@ -16,7 +16,7 @@
 
 **Then**
 
-> It should open the "Test Cases page.
+> It should open the /products page.
 
 </br>
 
