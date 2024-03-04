@@ -27,6 +27,12 @@ Clone this repository:
 git clone https://github.com/yDkay/Bravo-Care-Automation.git
 ```
 
+Change directories:
+
+```bash
+cd Bravo-Care-Automation/
+```
+
 Install dependencies:
 
 ```bash
