@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 <h1 align="center" style="color: #1b74b6">
-<img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/lt2dlarmpcgerkt908ib" width="20" height="20" style="vertical-align:center"/> Bravo Care Automation
+<img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/lt2dlarmpcgerkt908ib" width="23" height="23" style="vertical-align:center"/> Bravo Care Automation
 
 <br/>
 
@@ -49,7 +49,9 @@ npx cypress run
 
 ## Run Video
 
-<video src="cypress\videos\automationExercise.cy.js.mp4" controls></video>
+<video controls>
+  <source src="https://github.com/yDkay/Bravo-Care-Automation/blob/42e095aa474c242dd458bd228d0eda969faaf825/cypress/videos/automationExercise.cy.js.mp4" type="video/mp4">
+</video>
 
 ## Links
 
