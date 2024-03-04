@@ -42,7 +42,7 @@ npm i
 Open Cypress:
 
 ```bash
-npx cypress open
+npm run start
 ```
 
 ## Resources:
@@ -50,7 +50,7 @@ npx cypress open
 To generate a cypress report, run the project in headless mode:
 
 ```bash
-npx cypress run
+npm run start:headless
 ```
 
 ## Run Video
