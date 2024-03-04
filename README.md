@@ -49,7 +49,7 @@ npx cypress run
 
 ## Run Video
 
-<iframe src="https://drive.google.com/file/d/1r9tVhawB37BWLF2UUxh4mFMHB8j95r7N/preview" allow="autoplay"></iframe>
+[<img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ-Kv0MVOzjjNqoUnnbeJq9Mrwa8zFLGeBminUO8qXnZmg3MqCGKlAjMDBPZE9eMgIuc9N8zHY6YrENHJwtP17-t_6vsg=w1920-h1080-k-pd">](https://drive.google.com/file/d/1r9tVhawB37BWLF2UUxh4mFMHB8j95r7N/preview)
 
 ## Links
 
