@@ -47,6 +47,12 @@ To generate a cypress report, run the project in headless mode:
 npx cypress run
 ```
 
+## Run Video
+
+<video src="cypress\videos\automationExercise.cy.js.mp4" controls></video>
+
+## Links
+
 [Thinking beyond Page Object Model in Cypress Test Automation...](https://www.linkedin.com/pulse/thinking-beyond-page-object-model-cypress-test-prashant-bellad/)
 
 [Application Actions: Use Them Instead of Page Objects](https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions)
