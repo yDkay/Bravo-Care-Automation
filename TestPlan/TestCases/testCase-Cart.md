@@ -1,6 +1,6 @@
 # Cart
 
-## Here we can organize all the test cases related to the Cart functionality
+## Here we can organize some of the test cases related to the Cart functionality
 
 </br>
 

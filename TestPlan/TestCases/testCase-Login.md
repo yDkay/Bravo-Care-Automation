@@ -1,6 +1,6 @@
 # Login
 
-## Here we can organize all the test cases related to the Login functionality
+## Here we can organize some of the test cases related to the Login functionality
 
 </br>
 
@@ -14,7 +14,7 @@
 
 **When**
 
-> I add those credentials correctly and click Login.
+> We add those credentials correctly and click Login.
 
 **Then**
 
@@ -32,7 +32,7 @@
 
 **When**
 
-> I add some credentials following the field rules and click Signup.
+> We add some credentials following the field rules and click Signup.
 
 **Then**
 
@@ -48,7 +48,7 @@
 
 **When**
 
-> I add fill the correct values in the forms.
+> We add fill the correct values in the forms.
 
 **Then**
 
